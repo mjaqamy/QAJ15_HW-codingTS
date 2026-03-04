@@ -4,12 +4,13 @@
 // (но в будущем должно быть легко расширить этот набор): 2, 4, 6, 8, 10, 12, 20, 100
 
 //sides - количество граней кубика
-function rollCube(sides: number){                                
-    const cubeSides =[2, 4, 6, 8, 10, 12, 20, 100];
-    if (!cubeSides.includes(sides)){                             //если такого числа граней нет, то выводим ошибку
-        throw new Error('Неправильное количество граней');
-    }
-return Math.floor(Math.random() * sides)+1; // Math.random() даёт число от 0 до 1. Умножаем на sides → получаем от 0 до sides
-// Округляем вниз и прибавляем 1 → получаем число от 1 до sides
+function rollCube(sides: number) {
+  const cubeSides = [2, 4, 6, 8, 10, 12, 20, 100];
+  if (!cubeSides.includes(sides)) {
+    //если такого числа граней нет, то выводим ошибку
+    throw new Error('Неправильное количество граней');
+  }
+  return Math.floor(Math.random() * sides) + 1; // Math.random() даёт число от 0 до 1. Умножаем на sides → получаем от 0 до sides
+  // Округляем вниз и прибавляем 1 → получаем число от 1 до sides
 }
 console.log(rollCube(10));
