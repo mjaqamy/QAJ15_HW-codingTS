@@ -16,5 +16,11 @@
   "main": "index.js",
   "scripts": {
     "format": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "typescript-eslint": "^8.56.1"
   }
 }
