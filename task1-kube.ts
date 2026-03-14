@@ -4,7 +4,7 @@
 // (но в будущем должно быть легко расширить этот набор): 2, 4, 6, 8, 10, 12, 20, 100
 
 //sides - количество граней кубика
-function rollCube(sides: number) {
+export function rollCube(sides: number) {
   const cubeSides = [2, 4, 6, 8, 10, 12, 20, 100];
   if (!cubeSides.includes(sides)) {
     //если такого числа граней нет, то выводим ошибку
