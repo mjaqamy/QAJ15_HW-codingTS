@@ -26,21 +26,18 @@ describe('Калькулятор (jest)', () => {
       const result = calcul.add(0, 0);
       expect(result).toBe(0);
     });
-    test('сложение с нулем (положительное число + 0)', () => {
-      const result = calcul.add(10, 0);
-      expect(result).toBe(10);
-    });
-    test('сложение с нулем (отрицательное число + 0)', () => {
-      const result = calcul.add(-2, 0);
-      expect(result).toBe(-2);
-    });
-    test('сложение с нулем (0 + положительное число)', () => {
-      const result = calcul.add(0, 20);
-      expect(result).toBe(20);
-    });
-    test('сложение с нулем (0 + отрицательное число)', () => {
-      const result = calcul.add(0, -50);
-      expect(result).toBe(-50);
+    test('сложение с нулем (число + 0)', () => {
+      const result1 = calcul.add(10, 0);
+      expect(result1).toBe(10);
+
+      const result2 = calcul.add(-2, 0);
+      expect(result2).toBe(-2);
+
+      const result3 = calcul.add(0, 20);
+      expect(result3).toBe(20);
+
+      const result4 = calcul.add(0, -50);
+      expect(result4).toBe(-50);
     });
   });
   describe('Деление', () => {

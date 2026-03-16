@@ -23,21 +23,18 @@ describe(`Калькулятор`, () => {
       const result = calc.add(0, 0);
       expect(result).to.equal(0);
     });
-    it('сложение с нулем (положительное число + 0)', () => {
-      const result = calc.add(10, 0);
-      expect(result).to.equal(10);
-    });
-    it('сложение с нулем (отрицательное число + 0)', () => {
-      const result = calc.add(-2, 0);
-      expect(result).to.equal(-2);
-    });
-    it('сложение с нулем (0 + положительное число)', () => {
-      const result = calc.add(0, 20);
-      expect(result).to.equal(20);
-    });
-    it('сложение с нулем (0 + отрицательное число)', () => {
-      const result = calc.add(0, -50);
-      expect(result).to.equal(-50);
+    it('сложение с нулем (число + 0)', () => {
+      const result1 = calc.add(10, 0);
+      expect(result1).to.equal(10);
+
+      const result2 = calc.add(-2, 0);
+      expect(result2).to.equal(-2);
+
+      const result3 = calc.add(0, 20);
+      expect(result3).to.equal(20);
+
+      const result4 = calc.add(0, -50);
+      expect(result4).to.equal(-50);
     });
   });
   describe('Деление', () => {
